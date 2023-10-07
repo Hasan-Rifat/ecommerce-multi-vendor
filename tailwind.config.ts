@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {},
+    screens: {
+      sm: "387px",
+      md: "768px",
+      lg: "976px",
+      xl: "1401px",
+    },
     colors: {
       primary: "#0970cd",
       secondary: "#0198e9",
