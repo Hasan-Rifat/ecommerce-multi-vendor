@@ -2,7 +2,6 @@
 import Slider from "react-slick";
 import sliderImg from "@/assets/slider image.svg";
 import Image from "next/image";
-
 type SliderProps = {};
 
 const Sliders: React.FC<SliderProps> = () => {
@@ -43,25 +42,26 @@ const Sliders: React.FC<SliderProps> = () => {
   };
 
   return (
-    <Slider {...settings} className="w-full h-full bg-[#000] relative">
+    <Slider {...settings} className="w-full  h-full">
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, i) => (
-        <div key={i} className=" bg-red w-full h-full flex items-center">
-          <Image
-            className="absolute top-0 left-0 w-full h-full "
-            src={sliderImg}
-            alt="slider image"
-          />
-          <div className="px-[60px] py-[160px] ">
-            <h2 className="text-[#0970CD] text-[45px] leading-7">
-              Explore Men’s <br /> Winter Collection
-            </h2>
-            <p className="text-[#646464] text-xl leading-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.{" "}
-            </p>
-            <button className="px-[25px] py-[18px] bg-secondary text-[#fff] rounded-2xl inline-block">
-              SHOP NOW
-            </button>
+        <div
+          key={i}
+          className="w-full h-full p-5 xl:px-[50px] xl:py-[60px] flex items-center relative"
+        >
+          <Image className="sliderImg" src={sliderImg} alt="slider image" />
+          <div className="h-[250px] xl:h-[450px] flex items-center ">
+            <div>
+              <h2 className="text-[#0970CD] text-xl xl:text-[45px] xl:leading-[55px] font-bold">
+                Explore Men’s <br /> Winter Collection
+              </h2>
+              <p className="text-[#646464] text-xs xl:text-xl xl:leading-10 xl:mt-[40px] xl:mb-[25px] my-5 w-[184px] xl:w-[418px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </p>
+              <button className="px-[25px] py-[10px] bg-secondary text-[#fff] rounded-[5px] border-none inline-block text-xs">
+                SHOP NOW
+              </button>
+            </div>
           </div>
         </div>
       ))}

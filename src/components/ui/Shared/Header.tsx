@@ -198,7 +198,7 @@ const Header: React.FC<HeaderProps> = () => {
         {/* bottom bar */}
         <div className=" mt-9 border-b-[1px] border-[#EFEEEE] bg-[#FBFBFB]">
           <div className="xl:container mx-auto relative group">
-            <ul className="flex items-center justify-around">
+            <ul className="grid grid-cols-3 justify-items-center xl:flex items-center justify-around">
               {categories.map((item, index) => (
                 <li
                   key={index}
