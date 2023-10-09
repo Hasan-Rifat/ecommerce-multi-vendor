@@ -14,3 +14,16 @@ export type Product = {
   category: string[];
   offer: string;
 };
+
+export type footerItem = {
+  id: number;
+  icon: string;
+  title: string;
+  description: string;
+};
+
+export type QuickLinks = {
+  id: number;
+  path: string;
+  name: string;
+};

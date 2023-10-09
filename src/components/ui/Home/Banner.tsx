@@ -11,7 +11,7 @@ const Banner: React.FC<BannerProps> = () => {
     <section className="px-4 my-7">
       <div className="container xl:container mx-auto">
         <div className="flex items-center gap-[30px]">
-          <div className="w-full xl:max-w-[925px] h-[250px] xl:h-[564px]  xl:w-2/3 rounded-2xl overflow-hidden">
+          <div className="w-full xl:max-w-[925px]  xl:h-[564px]  xl:w-2/3 rounded-2xl overflow-hidden">
             <Sliders />
           </div>
           <div className="hidden xl:block max-w-[449px] w-1/3  rounded-2xl">

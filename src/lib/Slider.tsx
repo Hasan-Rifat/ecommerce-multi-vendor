@@ -46,19 +46,19 @@ const Sliders: React.FC<SliderProps> = () => {
       {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, i) => (
         <div
           key={i}
-          className="w-full h-full p-5 xl:px-[50px] xl:py-[60px] flex items-center relative"
+          className="w-full h-full p-5 xl:px-[50px] xl:py-[60px] flex items-center relative overflow-hidden rounded-3xl"
         >
           <Image className="sliderImg" src={sliderImg} alt="slider image" />
-          <div className="h-[250px] xl:h-[450px] flex items-center ">
+          <div className="w-full h-full xl:h-[450px] flex items-center ">
             <div>
               <h2 className="text-[#0970CD] text-xl xl:text-[45px] xl:leading-[55px] font-bold">
                 Explore Men’s <br /> Winter Collection
               </h2>
-              <p className="text-[#646464] text-xs xl:text-xl xl:leading-10 xl:mt-[40px] xl:mb-[25px] my-5 w-[184px] xl:w-[418px]">
+              <p className="text-[#646464] text-xs xl:text-xl xl:leading-10 xl:mt-[40px] xl:mb-[25px] py-5 w-[184px] xl:w-[418px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor.
               </p>
-              <button className="px-[25px] py-[10px] bg-secondary text-[#fff] rounded-[5px] border-none inline-block text-xs">
+              <button className="px-[25px] py-[10px] bg-secondary text-[#fff] rounded-[5px] border-none inline-block text-xs mb-11">
                 SHOP NOW
               </button>
             </div>

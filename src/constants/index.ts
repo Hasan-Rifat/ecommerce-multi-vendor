@@ -13,7 +13,7 @@ import men2 from "@/assets/category/men 2.svg";
 import tools from "@/assets/category/tool.svg";
 import pet from "@/assets/category/pet.svg";
 import seasonal from "@/assets/category/seasonal.svg";
-import { Category, Product } from "@/types";
+import { Category, Product, QuickLinks, footerItem } from "@/types";
 
 import headrest from "@/assets/product/image.svg";
 import womenFashion from "@/assets/product/image-5.svg";
@@ -32,6 +32,16 @@ import image18 from "@/assets/product/image-18.svg";
 import lite from "@/assets/product/image-9.svg";
 import bag from "@/assets/product/image-14.svg";
 import bag2 from "@/assets/product/image-19.svg";
+
+import delivery from "@/assets/footer/delivery.svg";
+import best from "@/assets/footer/best.svg";
+import returnIcon from "@/assets/footer/return.svg";
+import payment from "@/assets/footer/payment.svg";
+
+import facebook from "@/assets/footer/Facebook.svg";
+import twitter from "@/assets/footer/Tw.svg";
+import linkedin from "@/assets/footer/Ld.svg";
+import instagram from "@/assets/footer/instagram.svg";
 
 export const categories: Category = [
   {
@@ -311,5 +321,97 @@ export const products: Product[] = [
     rating: 4.7,
     category: ["Food & Grocery"],
     offer: "25% off",
+  },
+];
+
+export const footerItems: footerItem[] = [
+  {
+    id: 1,
+    icon: delivery,
+    title: "FREE SHIPPING",
+    description: "Order via Compaign",
+  },
+  { id: 2, icon: best, title: "BEST PRICE", description: "Quality Products" },
+  {
+    id: 3,
+    icon: returnIcon,
+    title: "FREE RETURN",
+    description: "Within 7 Days returns",
+  },
+  {
+    id: 4,
+    icon: payment,
+    title: "SECURE PAYMENT",
+    description: "100% secure payment",
+  },
+];
+
+export const qLinks: QuickLinks[] = [
+  { id: 1, path: "about-us", name: "About Us" },
+  {
+    id: 2,
+    path: "contact-us",
+    name: "Contact Us",
+  },
+  {
+    id: 4,
+    path: "products",
+    name: "Products",
+  },
+  {
+    id: 5,
+    path: "login",
+    name: "Login",
+  },
+  {
+    id: 6,
+    path: "sign-up",
+    name: "Sign Up",
+  },
+];
+
+export const customerLinks: QuickLinks[] = [
+  { id: 1, path: "my-account", name: "My Account" },
+  {
+    id: 2,
+    path: "orders",
+    name: "Orders",
+  },
+  {
+    id: 3,
+    path: "terms",
+    name: "Terms",
+  },
+  {
+    id: 4,
+    path: "privacy-policy",
+    name: "Privacy Policy",
+  },
+  {
+    id: 5,
+    path: "shipping-information",
+    name: "Shipping Information",
+  },
+];
+
+export const socialLinks = [
+  {
+    id: 1,
+    path: "https://www.facebook.com/",
+    name: "Facebook",
+    icon: facebook,
+  },
+  { id: 2, path: "https://www.twitter.com/", name: "Twitter", icon: twitter },
+  {
+    id: 5,
+    path: "https://www.linkedin.com/",
+    name: "Linkedin",
+    icon: linkedin,
+  },
+  {
+    id: 3,
+    path: "https://www.instagram.com/",
+    name: "Instagram",
+    icon: instagram,
   },
 ];

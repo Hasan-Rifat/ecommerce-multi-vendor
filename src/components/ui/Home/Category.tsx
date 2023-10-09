@@ -8,10 +8,10 @@ type CategoryProps = {};
 
 const Category: React.FC<CategoryProps> = () => {
   return (
-    <section className="py-[30px]">
+    <section className="py-[30px] px-5">
       <div className="mx-auto container xl:container">
         <div>
-          <h2 className="text-[#383838] pb-[25px] text-2xl font-medium">
+          <h2 className="text-[#383838] pb-[25px] text-base md:text-2xl font-medium">
             Category
           </h2>
         </div>
@@ -22,9 +22,11 @@ const Category: React.FC<CategoryProps> = () => {
               href={`/category/${item.path}`}
               key={item.id}
             >
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-2">
                 <Image src={item.icon} alt={item.icon} />
-                <h3 className="text-[#394146]">{item.name}</h3>
+                <h3 className="text-[#394146] text-sm md:text-base">
+                  {item.name}
+                </h3>
                 <Image src={rightArrow} alt={rightArrow} />
               </div>
             </Link>
