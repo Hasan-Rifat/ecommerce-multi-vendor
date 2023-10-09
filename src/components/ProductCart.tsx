@@ -6,6 +6,7 @@ import Image from "next/image";
 import order from "@/assets/order.svg";
 import heart from "@/assets/redheart.svg";
 import blankHeart from "@/assets/blankheart.svg";
+import Link from "next/link";
 
 type ProductCartProps = {
   product: Product;
@@ -51,7 +52,9 @@ const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
           <span>৳</span>
           <span>{product.price}</span>
         </h4>
-        <Image src={order} alt="order" />
+        <Link href={`/product/${product.id}`}>
+          <Image src={order} alt="order" />
+        </Link>
       </div>
     </div>
   );
