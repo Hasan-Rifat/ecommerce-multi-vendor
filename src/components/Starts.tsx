@@ -4,18 +4,18 @@ import fullStar from "@/assets/Star 3.svg";
 import blankStart from "@/assets/Star 5.svg";
 import Image from "next/image";
 type StartsProps = {
-  start: number;
+  value: number;
 };
 
-const Starts: React.FC<StartsProps> = ({ start }) => {
+const Starts: React.FC<StartsProps> = ({ value }) => {
   const ratingStart = Array.from({ length: 5 }, (_, index) => {
     let number = index + 0.5;
 
     return (
       <span key={index}>
-        {start >= index + 1 ? (
+        {value >= index + 1 ? (
           <Image src={fullStar} alt="fullStar" width={16} height={16} />
-        ) : start >= number ? (
+        ) : value >= number ? (
           <ImStarHalf size={16} className="text-[#fac96b]" />
         ) : (
           <Image src={blankStart} alt="blankStart" width={16} height={16} />

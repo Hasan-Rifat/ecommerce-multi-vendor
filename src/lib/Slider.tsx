@@ -12,6 +12,7 @@ const Sliders: React.FC<SliderProps> = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
+    arrows: false,
 
     responsive: [
       {

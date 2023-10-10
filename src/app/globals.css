@@ -6,14 +6,40 @@ body {
   background: #fafafa;
 }
 
+/* Add this CSS to your stylesheet or component */
+.slider-container {
+  position: relative;
+}
+
 button.slick-arrow.slick-prev,
 button.slick-arrow.slick-next {
-  display: none !important;
+  position: absolute;
+  transform: rotate(90deg); /* Rotate the arrows vertically */
+  /* transform-origin: center; */
 }
+
+button.slick-arrow.slick-prev {
+  left: 35%;
+  top: -7%;
+  opacity: 1 !important;
+}
+
+button.slick-arrow.slick-next,
+.slick-prev:before,
+.slick-next:before {
+  /* right: -20px;  Adjust the position of the next arrow */
+  right: 50%;
+  bottom: 0;
+  opacity: 1 !important;
+}
+
+/* button.slick-arrow.slick-prev,
+button.slick-arrow.slick-next {
+  display: none !important;
+} */
 
 .slick-dots {
   bottom: 25px !important;
-  /* left: -11% !important; */
 }
 
 li.slick-active {

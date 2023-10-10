@@ -6,7 +6,7 @@ export type Category = {
 }[];
 
 export type Product = {
-  id: number;
+  id: string;
   title: string;
   image: any;
   price: number;
@@ -16,14 +16,14 @@ export type Product = {
 };
 
 export type footerItem = {
-  id: number;
+  id: string;
   icon: string;
   title: string;
   description: string;
 };
 
 export type QuickLinks = {
-  id: number;
+  id: string;
   path: string;
   name: string;
 };

@@ -138,7 +138,7 @@ export const categories: Category = [
 
 export const products: Product[] = [
   {
-    id: 101,
+    id: "101",
     title: "Headrest Executive Mesh Office Chair set",
     image: headrest,
     price: 99.99,
@@ -147,7 +147,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 102,
+    id: "102",
     title: "Women fashion dress set",
     image: womenFashion,
     price: 29.99,
@@ -156,7 +156,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 103,
+    id: "103",
     title: "Headrest Executive Mesh Office Chair set",
     image: headrestExecutive,
     price: 49.99,
@@ -165,7 +165,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 104,
+    id: "104",
     title: "Women black dress and red hat collections",
     image: womenBlack,
     price: 69.99,
@@ -179,7 +179,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 105,
+    id: "105",
     title: "Headrest Executive Mesh Office Chair set",
     image: clock,
     price: 39.99,
@@ -188,7 +188,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 106,
+    id: "106",
     title: "Women fashion dress set",
     image: char,
     price: 19.99,
@@ -197,7 +197,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 107,
+    id: "107",
     title: "Headrest Executive Mesh Office Chair set",
     image: chair2,
     price: 149.99,
@@ -206,7 +206,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 108,
+    id: "108",
     title: "Headrest Executive Mesh Office Chair set   ",
     image: chair3,
     price: 999.99,
@@ -215,7 +215,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 109,
+    id: "109",
     title: "Headrest Executive Mesh Office Chair set",
     image: image2,
     price: 79.99,
@@ -224,7 +224,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 110,
+    id: "110",
     title: "Headrest Executive Mesh Office Chair set",
     image: image7,
     price: 79.99,
@@ -233,7 +233,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 111,
+    id: "111",
     title: "Headrest Executive Mesh Office Chair set",
     image: image12,
     price: 79.99,
@@ -242,7 +242,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 112,
+    id: "112",
     title: "Women black dress and red hat collections",
     image: image15,
     price: 79.99,
@@ -251,7 +251,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 1113,
+    id: "1113",
     title: "Headrest Executive Mesh Office Chair set",
     image: image3,
     price: 79.99,
@@ -260,7 +260,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 113,
+    id: "113",
     title: "Women fashion dress set ",
     image: womenBlack,
     price: 79.99,
@@ -269,7 +269,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 1131,
+    id: "1131",
     title: "Headrest Executive Mesh Office Chair set",
     image: headrestExecutive,
     price: 79.99,
@@ -278,7 +278,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 114,
+    id: "114",
     title: "Women black dress and red hat collections",
     image: image18,
     price: 79.99,
@@ -287,7 +287,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 115,
+    id: "115",
     title: "Headrest Executive Mesh Office Chair set",
     image: clock,
     price: 79.99,
@@ -296,7 +296,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 116,
+    id: "116",
     title: "Women fashion dress set",
     image: lite,
     price: 79.99,
@@ -305,7 +305,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 117,
+    id: "117",
     title: "Headrest Executive Mesh Office Chair set",
     image: bag,
     price: 79.99,
@@ -314,7 +314,7 @@ export const products: Product[] = [
     offer: "25% off",
   },
   {
-    id: 118,
+    id: "118",
     title: "Women black dress and red hat collections",
     image: bag2,
     price: 79.99,
@@ -326,20 +326,20 @@ export const products: Product[] = [
 
 export const footerItems: footerItem[] = [
   {
-    id: 1,
+    id: "1",
     icon: delivery,
     title: "FREE SHIPPING",
     description: "Order via Compaign",
   },
-  { id: 2, icon: best, title: "BEST PRICE", description: "Quality Products" },
+  { id: "2", icon: best, title: "BEST PRICE", description: "Quality Products" },
   {
-    id: 3,
+    id: "3",
     icon: returnIcon,
     title: "FREE RETURN",
     description: "Within 7 Days returns",
   },
   {
-    id: 4,
+    id: "4",
     icon: payment,
     title: "SECURE PAYMENT",
     description: "100% secure payment",
@@ -347,48 +347,48 @@ export const footerItems: footerItem[] = [
 ];
 
 export const qLinks: QuickLinks[] = [
-  { id: 1, path: "about-us", name: "About Us" },
+  { id: "1", path: "about-us", name: "About Us" },
   {
-    id: 2,
+    id: "2",
     path: "contact-us",
     name: "Contact Us",
   },
   {
-    id: 4,
+    id: "4",
     path: "products",
     name: "Products",
   },
   {
-    id: 5,
+    id: "5",
     path: "login",
     name: "Login",
   },
   {
-    id: 6,
+    id: "6",
     path: "sign-up",
     name: "Sign Up",
   },
 ];
 
 export const customerLinks: QuickLinks[] = [
-  { id: 1, path: "my-account", name: "My Account" },
+  { id: "1", path: "my-account", name: "My Account" },
   {
-    id: 2,
+    id: "2",
     path: "orders",
     name: "Orders",
   },
   {
-    id: 3,
+    id: "3",
     path: "terms",
     name: "Terms",
   },
   {
-    id: 4,
+    id: "4",
     path: "privacy-policy",
     name: "Privacy Policy",
   },
   {
-    id: 5,
+    id: "5",
     path: "shipping-information",
     name: "Shipping Information",
   },
@@ -414,4 +414,21 @@ export const socialLinks = [
     name: "Instagram",
     icon: instagram,
   },
+];
+
+export const images: string[] = [
+  headrest,
+  womenFashion,
+  headrestExecutive,
+  womenBlack,
+  clock,
+  char,
+  chair2,
+  chair3,
+  image2,
+  image7,
+  image12,
+  image15,
+  image3,
+  image18,
 ];

@@ -20,7 +20,7 @@ const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
           <div className="uppercase md:text-sm font-semibold rounded-tl-[9px] rounded-tr-[2px] rounded-br-[2px] rounded-bl-[2px] bg-gradient-to-r from-[#FF7A00] via-transparent to-[#FFB800] text-shadow-md text-[#fff] px-[5px] md:w-[91px] md:h-[30px] w-[50px] h-[16px] flex items-center justify-center text-[8px]">
             <span>{product.offer}</span>
           </div>
-          {product.id == 102 || product.id == 106 ? (
+          {product.id == "102" || product.id == "106" ? (
             <Image
               src={heart}
               alt="blankHeart"
@@ -42,7 +42,7 @@ const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
       </div>
       <div>
         <div className="flex items-center gap-[3px] pt-[17px] pb-[12px]">
-          <Starts start={product.rating} />
+          <Starts value={product.rating} />
           <span className="text-tertiary text-xs">({product.rating})</span>
         </div>
         <h3 className="text-sm md:text-lg text-[#383838]">{product.title}</h3>

@@ -106,7 +106,7 @@ const Footer: React.FC<FooterProps> = () => {
           </div>
         </div>
         {/* footer bottom */}
-        <div className="container xl:container mx-auto pb-5 px-5">
+        <div className="container xl:container mx-auto px-5">
           <div className="flex xl:flex-row flex-col justify-between items-center">
             <p className="text-tertiary text-base text-center py-5">
               Projectnirvoya - © 2021 All Rights Reserved
