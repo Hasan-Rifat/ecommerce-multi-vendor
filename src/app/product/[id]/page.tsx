@@ -16,6 +16,12 @@ import ImageSlider from "@/lib/ImageSlider";
 import Link from "next/link";
 import Quantity from "@/components/ui/ProductDetails/Quantity";
 import AddReviewForm from "@/components/AddReviewForm";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 type pageProps = { params: { id: string } };
 
@@ -25,7 +31,9 @@ const page: React.FC<pageProps> = ({ params }) => {
   const data = products.find((item) => item.id === id);
 
   return (
-    <section className="px-5 py-5 md:py-20 my-10 xl:py-10 xl:my-0">
+    <section
+      className={`px-5 py-5 md:py-20 my-10 xl:py-10 xl:my-0 ${poppins.className}`}
+    >
       <div className="container xl:container mx-auto">
         <div>
           <div className="flex flex-col gap-5 lg:flex-row xl:gap-[109px]">

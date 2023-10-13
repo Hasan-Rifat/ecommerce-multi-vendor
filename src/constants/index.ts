@@ -18,6 +18,7 @@ import {
   CategoryItem,
   Product,
   QuickLinks,
+  cartItem,
   footerItem,
   review,
   socialLinkIcon,
@@ -635,5 +636,26 @@ export const reviewsData: review[] = [
     image: roveria,
     review:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+];
+
+export const cartItems: cartItem[] = [
+  {
+    id: "12314124124",
+    image: clock,
+    title: "Headrest Executive Mesh Office Chair set",
+    price: 976.33,
+  },
+  {
+    id: "12314124125",
+    image: chair2,
+    title: "Headrest Executive Mesh Office Chair set",
+    price: 976.33,
+  },
+  {
+    id: "12314124126",
+    image: image2,
+    title: "Headrest Executive Mesh Office Chair set",
+    price: 976.33,
   },
 ];

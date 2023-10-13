@@ -48,3 +48,10 @@ export type review = {
   rating: string;
   date: string;
 };
+
+export type cartItem = {
+  id: string;
+  title: string;
+  image: any;
+  price: number;
+};

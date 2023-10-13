@@ -69,6 +69,10 @@ li.slick-active {
   right: 0% !important;
 } */
 
+.cart-btn {
+  box-shadow: 0px 1px 5px 4px rgba(0, 0, 0, 0.05) inset;
+}
+
 @media (max-width: 500px) {
   .slick-dots li button:before {
     font-size: 12px !important;

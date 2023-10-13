@@ -14,6 +14,7 @@ import arrowTop from "@/assets/arrow top.svg";
 import arrowBottom from "@/assets/arrow buttom.svg";
 
 import arrowRight from "@/assets/Arrow - Right 2.svg";
+import { Poppins } from "next/font/google";
 
 type HeaderProps = {};
 
@@ -133,6 +134,11 @@ const categories: Category[] = [
   },
 ];
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 const Header: React.FC<HeaderProps> = () => {
   function SampleNextArrow(props: {
     className?: string;
@@ -189,7 +195,7 @@ const Header: React.FC<HeaderProps> = () => {
   };
   const path = usePathname();
   return (
-    <nav className=" h-[151px] py-5">
+    <nav className={` h-[151px] py-5 ${poppins.className}`}>
       <div className="bg-[#FBFBFB] px-4">
         {/* top bar */}
         <div className="xl:container xl:flex-row flex-wrap xl:flex-nowrap container mx-auto flex   justify-between items-center  gap-4 xl:gap-[75px] ">

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import Image from "next/image";
+import FilterRating from "./FilterRating";
 
 type FilterBarProps = {
   minPrice: number;
@@ -31,8 +32,8 @@ const FilterBar: React.FC<FilterBarProps> = ({
             className={`${
               path === `/category/men's-fashion`
                 ? "text-secondary"
-                : "text-[#757575] ml-[27px]"
-            } font-medium  text-xs xl:text-base
+                : "text-[#757575] "
+            } font-medium  text-xs xl:text-base ml-[27px]
           list-disc	pb-[5px]
             `}
           >
@@ -71,51 +72,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
         </div>
       </div>
       <div className="">
-        <div className="px-[19px] pt-[25px]">
-          <h2 className="text-lg text-[#3D3D3F] font-medium capitalize">
-            Filter by Rating
-          </h2>
-
-          <div className=" my-8">
-            <div className="flex flex-col gap-4">
-              <div className="flex gap-4 items-center">
-                <input
-                  className="border-2 border-[#d0d0d2] w-6 h-6 appearance-none "
-                  type="checkbox"
-                />
-                <Starts data={24} value={1} />
-              </div>
-              <div className="flex gap-4 items-center">
-                <input
-                  className="border-2 border-[#d0d0d2] w-6 h-6 appearance-none "
-                  type="checkbox"
-                />
-                <Starts data={24} value={2} />
-              </div>
-              <div className="flex gap-4 items-center">
-                <input
-                  className="border-2 border-[#d0d0d2] w-6 h-6 appearance-none "
-                  type="checkbox"
-                />
-                <Starts data={24} value={3} />
-              </div>
-              <div className="flex gap-4 items-center">
-                <input
-                  className="border-2 border-[#d0d0d2] w-6 h-6 appearance-none "
-                  type="checkbox"
-                />
-                <Starts data={24} value={4} />
-              </div>
-              <div className="flex gap-4 items-center">
-                <input
-                  className="border-2 border-[#d0d0d2] w-6 h-6 appearance-none "
-                  type="checkbox"
-                />
-                <Starts data={24} value={5} />
-              </div>
-            </div>
-          </div>
-        </div>
+        <FilterRating />
       </div>
     </div>
   );

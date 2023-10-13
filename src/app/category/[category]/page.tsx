@@ -7,23 +7,30 @@ import ProductCart from "@/components/ProductCart";
 
 import right from "@/assets/right-p.svg";
 import left from "@/assets/left-p.svg";
+import { Poppins } from "next/font/google";
 
 type pageProps = { params: any };
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 const page: React.FC<pageProps> = ({ params }) => {
+  console.log(params);
   // filter data by params.category
   const data = products.filter((product) =>
     product.category
       .map((item) => item.toLocaleLowerCase())
-      .includes(params.category[1].split("-").join(" "))
+      .includes(params.category.split("-").join(" "))
   );
 
   const maxPrice = Math.max(...data.map((item) => item.price));
   const minPrice = Math.min(...data.map((item) => item.price));
 
   return (
-    <div className="py-14 ">
-      <div className="xl:container xl:flex-row flex-wrap xl:flex-nowrap container mx-auto flex  px-10 justify-between items-center  gap-4 xl:gap-[75px] ">
+    <div className={`py-14 ${poppins.className} px-10 `}>
+      <div className="xl:container xl:flex-row flex-wrap xl:flex-nowrap container mx-auto flex  justify-between items-center  gap-4 xl:gap-[75px] ">
         <div className="flex flex-col md:flex-row gap-5 lg:gap-[53px]">
           <div className="xl:w-[300px] w-full lg:w-1/3">
             <FilterBar maxPrice={maxPrice} minPrice={minPrice} />
