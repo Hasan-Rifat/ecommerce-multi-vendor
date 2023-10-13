@@ -13,7 +13,15 @@ import men2 from "@/assets/category/men 2.svg";
 import tools from "@/assets/category/tool.svg";
 import pet from "@/assets/category/pet.svg";
 import seasonal from "@/assets/category/seasonal.svg";
-import { Category, Product, QuickLinks, footerItem } from "@/types";
+import {
+  Category,
+  CategoryItem,
+  Product,
+  QuickLinks,
+  footerItem,
+  review,
+  socialLinkIcon,
+} from "@/types";
 
 import headrest from "@/assets/product/image.svg";
 import womenFashion from "@/assets/product/image-5.svg";
@@ -42,6 +50,17 @@ import facebook from "@/assets/footer/Facebook.svg";
 import twitter from "@/assets/footer/Tw.svg";
 import linkedin from "@/assets/footer/Ld.svg";
 import instagram from "@/assets/footer/instagram.svg";
+
+import linkedinIcon from "@/assets/linkedin.svg";
+import twitterIcon from "@/assets/twitter.svg";
+import facebookIcon from "@/assets/facebook.svg";
+import whatsupIcon from "@/assets/whatsup.svg";
+import link from "@/assets/link.svg";
+
+import vanille from "@/assets/reviews/vanille.svg";
+import maduin from "@/assets/reviews/maduin.svg";
+import samantha from "@/assets/reviews/samantha.svg";
+import roveria from "@/assets/reviews/roveria.svg";
 
 export const categories: Category = [
   {
@@ -135,6 +154,112 @@ export const categories: Category = [
     icon: seasonal,
   },
 ];
+export const categoriesItem: CategoryItem[] = [
+  {
+    category: "Women's Fashion",
+    path: "womens-fashion",
+    subcategories: [
+      {
+        saree: "Saree",
+        cotton: "Cotton",
+        silk: "Silk",
+        katan: "Katan",
+        muslin: "Muslin",
+        jamdani: "Jamdani",
+        georgette: "Georgette",
+        "nakshi-kantha": "Nakshi Kantha",
+        linen: "Linen",
+        Khadi: "Khadi",
+        "tangail-taant": "Tangail Taant",
+        Monipuri: "Monipuri",
+        "dhakai-Benaroshi": "Dhakai Benaroshi",
+      },
+      {
+        clothes: "Clothes",
+        tshirt: "Tshirt",
+        shorts: "Shorts",
+        shirt: "Shirt",
+        tracksuit: "Tracksuit",
+        jeans: "Jeans",
+        georgette: "Georgette",
+        waistcoat: "Waistcoat",
+        sweater: "Sweater",
+        coats: "coats",
+        suit: "Suit",
+        sweatshirt: "Sweatshirt",
+        uniform: "Uniform",
+      },
+      {
+        cosmetic: "Cosmetic",
+        perfume: "Perfume",
+        "eye-make-up": "Eye make-up",
+        "skin-care": "Skin care",
+        "hair-care": "Hair care",
+        "make-up": "Make-up",
+        "oral-care": "Oral Care",
+        "body-care": "Body Care",
+        "sanitary-pad": "Sanitary pad",
+        "shower-gels-creams": "Shower Gels & Creams",
+        "hair-removal-products": "Hair Removal Products",
+        lipstick: "Lipstick",
+        "suntan-cream": "Suntan cream",
+      },
+      {
+        "sports-outdoor": "Sports & Outdoor",
+        sweatshirt: "Sweatshirt",
+        "t-shirt": "Shirt",
+        "sports-bra": "Sports Bra",
+        leggings: "Leggings",
+        tracksuit: "Tracksuit",
+        "running-shoes": "Running Shoes",
+        "sports-bag": "Sports Bag",
+        "sports-equipment": "Sports Equipment",
+        "outdoor-shoes": "Outdoor Shoes",
+        "snow-boot": "Snow Boot",
+        "outDoor-equipment": "OutDoor Equipment",
+        "sports-accessories": "Sports Accessories",
+      },
+      {
+        "personal-care": "Personal Care",
+        perfume: "Perfume",
+        "Sexual-health": "Sexual Health",
+        "after-shave-products": "After Shave Products",
+        "razor-blades": "Razor Blades",
+        shoes: "Shoes",
+        "heeled-shoes": "Heeled Shoes",
+        sneakers: "Sneakers",
+        "casual-shoes": "Casual Shoes",
+        babet: "Babet",
+        sandals: "Sandals",
+        slippers: "Slippers",
+      },
+    ],
+  },
+  {
+    category: "Men's Fashion",
+    path: "mens-fashion",
+  },
+  {
+    category: "Kid's Fashion",
+    path: "kids-fashion",
+  },
+  {
+    category: "Home & Lifestyle",
+    path: "home-lifestyle",
+  },
+  {
+    category: "Arts & Crafts",
+    path: "arts-crafts",
+  },
+  {
+    category: "Computer & Electronics",
+    path: "computer-electronics",
+  },
+  {
+    category: "Food & Grocery",
+    path: "food-grocery",
+  },
+];
 
 export const products: Product[] = [
   {
@@ -143,7 +268,7 @@ export const products: Product[] = [
     image: headrest,
     price: 99.99,
     rating: 4.5,
-    category: ["Women's Fashion", "Saree", "Silk"],
+    category: ["Womens Fashion", "Saree", "Silk", "home lifestyle"],
     offer: "25% off",
   },
   {
@@ -152,7 +277,13 @@ export const products: Product[] = [
     image: womenFashion,
     price: 29.99,
     rating: 4.2,
-    category: ["Women's Fashion", "Men's Fashion", "Shirt", "Cotton"],
+    category: [
+      "Womens Fashion",
+      "Men's Fashion",
+      "Shirt",
+      "Cotton",
+      "arts crafts",
+    ],
     offer: "25% off",
   },
   {
@@ -161,7 +292,13 @@ export const products: Product[] = [
     image: headrestExecutive,
     price: 49.99,
     rating: 4.7,
-    category: ["Women's Fashion", "Cosmetic", "Skin care", "Personal Care"],
+    category: [
+      "Womens Fashion",
+      "Cosmetic",
+      "Skin care",
+      "Personal Care",
+      "computer electronics",
+    ],
     offer: "25% off",
   },
   {
@@ -175,6 +312,7 @@ export const products: Product[] = [
       "Sports & Outdoor",
       "Running Shoes",
       "Sports Equipment",
+      "food grocery",
     ],
     offer: "25% off",
   },
@@ -193,7 +331,7 @@ export const products: Product[] = [
     image: char,
     price: 19.99,
     rating: 4.8,
-    category: ["Kid's Fashion", "Tshirt", "Women's Fashion"],
+    category: ["Kids Fashion", "Tshirt", "Women's Fashion"],
     offer: "25% off",
   },
   {
@@ -431,4 +569,71 @@ export const images: string[] = [
   image15,
   image3,
   image18,
+];
+
+export const icons: socialLinkIcon[] = [
+  {
+    id: "1",
+    image: linkedinIcon,
+    path: "www.linkedin.com",
+  },
+  {
+    id: "2",
+    image: twitterIcon,
+    path: "www.twitter.com",
+  },
+  {
+    id: "3",
+    image: facebookIcon,
+    path: "www.facebook.com",
+  },
+  {
+    id: "4",
+    image: whatsupIcon,
+    path: "www.whatsapp.com",
+  },
+  {
+    id: "5",
+    image: link,
+    path: "/",
+  },
+];
+
+export const reviewsData: review[] = [
+  {
+    id: "1",
+    name: "Vanille",
+    rating: "5.0",
+    date: "1 Month Ago",
+    image: vanille,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+  {
+    id: "2",
+    name: "Maduin",
+    rating: "5.0",
+    date: "1 Month Ago",
+    image: maduin,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+  {
+    id: "3",
+    name: "Samantha",
+    rating: "5.0",
+    date: "1 Month Ago",
+    image: samantha,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+  {
+    id: "4",
+    name: "Roveria",
+    rating: "5.0",
+    date: "1 Month Ago",
+    image: roveria,
+    review:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
 ];

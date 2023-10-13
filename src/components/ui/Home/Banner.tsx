@@ -8,7 +8,7 @@ type BannerProps = {};
 
 const Banner: React.FC<BannerProps> = () => {
   return (
-    <section className="px-4 my-7">
+    <section className="px-4 my-20 xl:my-7">
       <div className="container xl:container mx-auto">
         <div className="flex items-center gap-[30px]">
           <div className="w-full xl:max-w-[925px]  xl:h-[564px]  xl:w-2/3 rounded-2xl overflow-hidden">

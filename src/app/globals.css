@@ -2,41 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
 body {
   background: #fafafa;
 }
 
-/* Add this CSS to your stylesheet or component */
-.slider-container {
-  position: relative;
+/* rang */
+
+/* rang end */
+
+.slick-prev {
+  top: 112% !important;
+  left: 33% !important;
+}
+.slick-next {
+  top: -12% !important;
+  left: 33% !important;
 }
 
-button.slick-arrow.slick-prev,
-button.slick-arrow.slick-next {
-  position: absolute;
-  transform: rotate(90deg); /* Rotate the arrows vertically */
-  /* transform-origin: center; */
-}
-
-button.slick-arrow.slick-prev {
-  left: 35%;
-  top: -7%;
-  opacity: 1 !important;
-}
-
-button.slick-arrow.slick-next,
 .slick-prev:before,
 .slick-next:before {
-  /* right: -20px;  Adjust the position of the next arrow */
-  right: 50%;
-  bottom: 0;
-  opacity: 1 !important;
-}
-
-/* button.slick-arrow.slick-prev,
-button.slick-arrow.slick-next {
   display: none !important;
-} */
+}
 
 .slick-dots {
   bottom: 25px !important;
@@ -69,6 +61,13 @@ li.slick-active {
   left: 0;
   z-index: -1;
 }
+
+/* .slick-list
+  .slick-arrow.slick-next.absolute.\!right-0.\!top-0.\!left-0.bottom-0.flex.items-center.justify-center\}
+  .slider-img {
+  top: 0% !important;
+  right: 0% !important;
+} */
 
 @media (max-width: 500px) {
   .slick-dots li button:before {

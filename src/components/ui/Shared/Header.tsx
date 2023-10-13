@@ -8,6 +8,12 @@ import heart from "@/assets/Heart.svg";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Slider from "react-slick";
+
+import arrowTop from "@/assets/arrow top.svg";
+import arrowBottom from "@/assets/arrow buttom.svg";
+
+import arrowRight from "@/assets/Arrow - Right 2.svg";
 
 type HeaderProps = {};
 
@@ -128,12 +134,65 @@ const categories: Category[] = [
 ];
 
 const Header: React.FC<HeaderProps> = () => {
+  function SampleNextArrow(props: {
+    className?: string;
+    style?: React.CSSProperties;
+    onClick?: () => void;
+  }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} absolute !right-0 !top-0 flex items-center justify-center ml-auto mt-[7.4%]`}
+        style={{ ...style, display: "block" }}
+        onClick={onClick}
+      >
+        <Image className="slider-img" src={arrowRight} alt="arrowTop" />
+      </div>
+    );
+  }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: true,
+    nextArrow: <SampleNextArrow />,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      /* {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }, */
+    ],
+  };
   const path = usePathname();
   return (
-    <nav className=" h-[151px]">
+    <nav className=" h-[151px] py-5">
       <div className="bg-[#FBFBFB] px-4">
         {/* top bar */}
-        <div className="xl:container xl:flex-row flex-wrap xl:flex-nowrap container mx-auto flex   justify-between items-center pt-5 gap-4 xl:gap-[75px] ">
+        <div className="xl:container xl:flex-row flex-wrap xl:flex-nowrap container mx-auto flex   justify-between items-center  gap-4 xl:gap-[75px] ">
           {/* logo */}
           <Link className="order-1 xl:order-1 w-[120px]" href={"/"}>
             <Image src={logo} alt="logo" width={120} height={50} />
@@ -196,26 +255,30 @@ const Header: React.FC<HeaderProps> = () => {
           </div>
         </div>
         {/* bottom bar */}
-        <div className=" mt-9 border-b-[1px] border-[#EFEEEE] bg-[#FBFBFB]">
+        <div className="mt-5 xl:mt-9 border-b-[1px] border-[#EFEEEE] bg-[#FBFBFB] px-10 md:px-0">
           <div className="xl:container mx-auto relative group">
-            <ul className="grid grid-cols-3 justify-items-center xl:flex items-center justify-around">
-              {categories.map((item, index) => (
-                <li
-                  key={index}
-                  className={`${
-                    path === `/category/${item.path}`
-                      ? "text-secondary border-secondary"
-                      : "border-[#fbfbfb]"
-                  } p-4 border-b-[2px] font-medium `}
-                >
-                  <Link href={`/category/${item.path}`}>{item.category}</Link>
-                </li>
-              ))}
+            <ul
+            /*       className="grid grid-cols-4 justify-items-center xl:flex items-center justify-around" */
+            >
+              <Slider {...settings} className="w-full text-center h-full">
+                {categories.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`${
+                      path === `/category/${item.path}`
+                        ? "text-secondary border-secondary"
+                        : "border-[#fbfbfb]"
+                    } pb-[10px] border-b-[2px] font-medium  text-[10px] xl:text-base`}
+                  >
+                    <Link href={`/category/${item.path}`}>{item.category}</Link>
+                  </li>
+                ))}
+              </Slider>
             </ul>
 
             {/* hover mega menu */}
             <div className="hidden absolute left-0 mt-1 space-x-2 bg-white rounded-lg px-[73px] py-[36px] bg-[#fff] group-hover:block xl:container mx-auto z-10">
-              <div className="grid grid-cols-3 xl:grid-cols-5 gap-4">
+              <div className="grid grid-cols-1 xl:grid-cols-5 gap-4">
                 {categories[0]?.subcategories?.map((subcategory, index) => {
                   const subcategoryName = Object.values(subcategory)[0];
                   return (

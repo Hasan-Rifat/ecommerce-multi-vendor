@@ -14,7 +14,7 @@ type ProductCartProps = {
 
 const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
   return (
-    <div className=" xl:w-[332px]  md:h-[469] rounded-lg  p-[9px] border-[1px] border-[#E9E9E9] flex flex-col justify-between bg-[#fff]">
+    <div className=" xl:w-[332px]  xl:h-[469] rounded-lg  p-[9px] border-[1px] border-[#E9E9E9] flex flex-col justify-between bg-[#fff]">
       <div className="relative h-[167px] md:h-[313px] bg-[#f2f2f2] rounded-lg">
         <div className="flex absolute left-0 top-0 w-full justify-between">
           <div className="uppercase md:text-sm font-semibold rounded-tl-[9px] rounded-tr-[2px] rounded-br-[2px] rounded-bl-[2px] bg-gradient-to-r from-[#FF7A00] via-transparent to-[#FFB800] text-shadow-md text-[#fff] px-[5px] md:w-[91px] md:h-[30px] w-[50px] h-[16px] flex items-center justify-center text-[8px]">
@@ -38,7 +38,7 @@ const ProductCart: React.FC<ProductCartProps> = ({ product }) => {
             />
           )}
         </div>
-        <Image src={product.image} alt="product" />
+        <Image src={product.image} className="w-full h-full" alt="product" />
       </div>
       <div>
         <div className="flex items-center gap-[3px] pt-[17px] pb-[12px]">

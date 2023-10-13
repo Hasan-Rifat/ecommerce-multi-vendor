@@ -35,7 +35,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        "green-500": "#4CAF50",
+      },
+    },
     screens: {
       sm: "387px",
       md: "768px",

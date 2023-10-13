@@ -34,7 +34,7 @@ const Footer: React.FC<FooterProps> = () => {
             <div className="xl:flex grid grid-cols-1 md:grid-cols-2 gap-10  py-16 justify-between border-t-[1px] border-[#E5E5E5] ">
               <div className="">
                 <Image src={logo} alt="logo" className="mb-9" />
-                <p className=" text-tertiary w-full xl:w-[390px]">
+                <p className=" text-tertiary w-full xl:w-[390px] text-xs md:text-base">
                   Lorem ipsum dolor sit amet, consectetur <br /> adipiscing
                   elit, sed do eiusmod tempor incididunt ut labore et dolore
                   magna aliqua.
@@ -86,7 +86,7 @@ const Footer: React.FC<FooterProps> = () => {
                 <h3 className="text-tertiary text-xl font-medium mb-[25px] uppercase ">
                   Contact
                 </h3>
-                <p className="text-base text-tertiary opacity-80 w-[340px] mt-[25px]">
+                <p className="text-base text-tertiary opacity-80 xl:w-[340px] mt-[25px]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor
                 </p>
