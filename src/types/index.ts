@@ -8,7 +8,7 @@ export type Category = {
 export type CategoryItem = {
   category: string;
   path: string;
-  subcategories?: Product[];
+  subcategories?: Product[] | any;
 };
 
 export type Product = {
