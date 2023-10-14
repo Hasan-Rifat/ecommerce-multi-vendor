@@ -73,6 +73,10 @@ li.slick-active {
   box-shadow: 0px 1px 5px 4px rgba(0, 0, 0, 0.05) inset;
 }
 
+.s-d {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 500px) {
   .slick-dots li button:before {
     font-size: 12px !important;

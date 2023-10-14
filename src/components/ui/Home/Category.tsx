@@ -8,7 +8,7 @@ type CategoryProps = {};
 
 const Category: React.FC<CategoryProps> = () => {
   return (
-    <section className="py-[30px] px-5">
+    <section className="xl:py-[30px] pb-7 px-5">
       <div className="mx-auto container xl:container">
         <div>
           <h2 className="text-[#383838] pb-[25px] text-base md:text-2xl font-medium">

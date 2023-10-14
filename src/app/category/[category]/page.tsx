@@ -17,7 +17,6 @@ const poppins = Poppins({
 });
 
 const page: React.FC<pageProps> = ({ params }) => {
-  console.log(params);
   // filter data by params.category
   const data = products.filter((product) =>
     product.category
@@ -31,7 +30,7 @@ const page: React.FC<pageProps> = ({ params }) => {
   return (
     <div className={`py-14 ${poppins.className} px-10 `}>
       <div className="xl:container xl:flex-row flex-wrap xl:flex-nowrap container mx-auto flex  justify-between items-center  gap-4 xl:gap-[75px] ">
-        <div className="flex flex-col md:flex-row gap-5 lg:gap-[53px]">
+        <div className="flex flex-col md:flex-row gap-5 lg:gap-[53px] w-full">
           <div className="xl:w-[300px] w-full lg:w-1/3">
             <FilterBar maxPrice={maxPrice} minPrice={minPrice} />
           </div>
@@ -56,24 +55,24 @@ const page: React.FC<pageProps> = ({ params }) => {
                 <ProductCart key={product.id} product={product} />
               ))}
             </div>
-            <div className="flex justify-end items-center mt-10">
-              <div className="flex flex-col lg:flex-row gap-[18px]">
-                <button className="px-[15px] py-[12px] rounded-[5px] border-[#E9E9E9] bg-[#fff] text-secondary flex gap-[14px] items-center text-lg font-semibold ">
+            <div className="flex justify-center md:justify-end items-center mt-10">
+              <div className="flex flex-col md:flex-row gap-[18px] justify-center">
+                <button className="px-[15px] py-[12px] rounded-[5px] border-[#E9E9E9] bg-[#fff] text-secondary flex gap-[14px] items-center text-sm lg:text-lg font-semibold ">
                   <Image src={left} alt="left" />
                   <span>Previous</span>
                 </button>
                 <div className="!rounded-[5px] border-[#E9E9E9] bg-[#fff] flex items-center justify-center">
-                  <button className="rounded-tl-[5px] rounded-bl-[5px]  px-6 py-3 bg-secondary text-[#fff]">
+                  <button className="rounded-tl-[5px] rounded-bl-[5px]  px-6 py-3 bg-secondary text-[#fff] text-sm lg:text-base">
                     1
                   </button>
-                  <button className="border-[#E9E9E9] border-r-[1px] px-6 py-3 text-secondary bg-[#fff]">
+                  <button className="border-[#E9E9E9] border-r-[1px] px-6 py-3 text-secondary bg-[#fff] text-sm lg:text-base">
                     2
                   </button>
-                  <button className=" px-6 py-3 text-secondary bg-[#fff]">
+                  <button className=" px-6 py-3 text-secondary bg-[#fff] text-sm lg:text-base">
                     3
                   </button>
                 </div>
-                <button className="rounded-tr-[5px] rounded-br-[5px]  px-[15px] py-[12px] rounded-[5px] border-[#E9E9E9] bg-[#fff] text-secondary flex gap-[14px] items-center text-lg font-semibold ">
+                <button className="rounded-tr-[5px] rounded-br-[5px]  px-[15px] py-[12px] rounded-[5px] border-[#E9E9E9] bg-[#fff] text-secondary flex gap-[14px] items-center text-sm lg:text-lg font-semibold ">
                   <span> Next</span>
                   <Image src={right} alt="right" />
                 </button>

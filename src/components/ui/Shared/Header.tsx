@@ -110,7 +110,7 @@ const categories: Category[] = [
   },
   {
     category: "Men's Fashion",
-    path: "mens-fashion",
+    path: "men's-fashion",
   },
   {
     category: "Kid's Fashion",
@@ -148,7 +148,7 @@ const Header: React.FC<HeaderProps> = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={`${className} absolute !right-0 !top-0 flex items-center justify-center ml-auto mt-[7.4%]`}
+        className={`${className} absolute !right-0 !top-0 flex items-center justify-center ml-auto md:mt-[3%] mt-[6.4%]`}
         style={{ ...style, display: "block" }}
         onClick={onClick}
       >

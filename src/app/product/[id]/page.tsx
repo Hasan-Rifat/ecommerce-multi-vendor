@@ -275,7 +275,7 @@ const page: React.FC<pageProps> = ({ params }) => {
           {/* Customer rating */}
           <div>
             <div className="py-3 px-5 lg:py-[25px] lg:px-12 bg-[#fff] mt-[30px]">
-              <div className="flex md:flex-row flex-col items-center gap-[75px]">
+              <div className="flex lg:flex-row flex-col items-center gap-9 xl:gap-[75px]">
                 <div className="max-w-[187px]">
                   <h4 className="text-xl text-tertiary font-semibold mb-[15px]">
                     Customer reviews
@@ -288,7 +288,7 @@ const page: React.FC<pageProps> = ({ params }) => {
                   </div>
                 </div>
                 <div className="w-full md:w-[519px]">
-                  <div className="flex items-center mt-4 w-full">
+                  <div className="flex items-center mt-4 justify-center lg:justify-normal  w-full">
                     <span className="text-sm  text-[#3D3D3F]  ">5 star</span>
                     <div className="w-2/4 h-[8px] mx-4 bg-[#dbdedf] rounded-full ">
                       <div
@@ -298,7 +298,7 @@ const page: React.FC<pageProps> = ({ params }) => {
                     </div>
                     <span className="text-sm  text-[#3D3D3F] ">70%</span>
                   </div>
-                  <div className="flex items-center mt-4">
+                  <div className="flex items-center mt-4 justify-center lg:justify-normal ">
                     <span className="text-sm text-[#3D3D3F]  ">4 star</span>
                     <div className="w-2/4 h-[8px] mx-4 bg-[#dbdedf] rounded-full ">
                       <div
@@ -308,7 +308,7 @@ const page: React.FC<pageProps> = ({ params }) => {
                     </div>
                     <span className="text-sm  text-[#3D3D3F] ">17%</span>
                   </div>
-                  <div className="flex items-center mt-4">
+                  <div className="flex items-center mt-4 justify-center lg:justify-normal ">
                     <span className="text-sm text-[#3D3D3F]  ">3 star</span>
                     <div className="w-2/4 h-[8px] mx-4 bg-[#dbdedf] rounded-full ">
                       <div
@@ -318,7 +318,7 @@ const page: React.FC<pageProps> = ({ params }) => {
                     </div>
                     <span className="text-sm  text-[#3D3D3F] ">8%</span>
                   </div>
-                  <div className="flex items-center mt-4">
+                  <div className="flex items-center mt-4 justify-center lg:justify-normal ">
                     <span className="text-sm  text-[#3D3D3F]  ">2 star</span>
                     <div className="w-2/4 h-[8px] mx-4 bg-[#dbdedf] rounded-full ">
                       <div
@@ -328,7 +328,7 @@ const page: React.FC<pageProps> = ({ params }) => {
                     </div>
                     <span className="text-sm  text-[#3D3D3F] ">4%</span>
                   </div>
-                  <div className="flex items-center mt-4">
+                  <div className="flex items-center mt-4 justify-center lg:justify-normal ">
                     <span className="text-sm text-[#3D3D3F]  ">1 star</span>
                     <div className="w-2/4 h-[8px] mx-4 bg-[#dbdedf] rounded-full ">
                       <div
@@ -339,12 +339,12 @@ const page: React.FC<pageProps> = ({ params }) => {
                     <span className="text-sm  text-[#3D3D3F] ">1%</span>
                   </div>
                 </div>
-                <button className="max-w-[200px] text-sm font-medium text-[#fff] px-12 py-[10px] opacity-90 shadow-md rounded-[3px] bg-secondary">
+                <button className="  xl:max-w-[200px] text-sm font-medium text-[#fff] px-12 py-[10px] opacity-90 shadow-md rounded-[3px] bg-secondary">
                   Write a Review
                 </button>
               </div>
               <div className=" mt-[20px]">
-                <h4 className="text-2xl font-medium text-tertiary tracking-[0.12px]">
+                <h4 className="text-xl xl:text-2xl font-medium text-tertiary tracking-[0.12px]">
                   Reviews ({reviewsData.length})
                 </h4>
               </div>
